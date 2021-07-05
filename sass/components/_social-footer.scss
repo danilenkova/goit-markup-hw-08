@@ -1,0 +1,43 @@
+.footer-social {
+  font-family: inherit;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer-social__title {
+  @extend %title;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-social__list {
+  @extend %list;
+  display: inline-flex;
+}
+
+.footer-social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer-social__icon {
+  @extend %link;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  background-color: $footer-social-link;
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+@include generateIcons($socialIcons);

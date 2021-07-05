@@ -1,0 +1,40 @@
+.js-mailing-form {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include centeredFlex;
+    flex-direction: column;
+  }
+}
+.js-mailing-form__label {
+  @extend %title;
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.js-mailing-form__input {
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1199px) {
+    width: 358px;
+    margin-right: 12px;
+  }
+  height: 50px;
+  padding: 15px 16px;
+  outline: none;
+  color: $header-bg-color;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  &::placeholder {
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: $footer-link-color;
+  }
+}

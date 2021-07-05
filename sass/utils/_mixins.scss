@@ -1,0 +1,21 @@
+@mixin centeredFlex($type: flex, $position: center, $align: center) {
+  display: $type;
+  justify-content: $position;
+  align-items: $align;
+}
+
+@mixin generateIcons($socialIcons) {
+  @each $iconName in $socialIcons {
+    .footer-social__icon--#{$iconName} {
+      background-image: url(../images/icons/#{$iconName}.svg);
+    }
+  }
+}
+
+@mixin generateTechIcons($techIcons) {
+  @each $iconName in $techIcons {
+    .feature__item--#{$iconName}::before {
+      background-image: url(../images/icons/#{$iconName}-icon.svg);
+    }
+  }
+}

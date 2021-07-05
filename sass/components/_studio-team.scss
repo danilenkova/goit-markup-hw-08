@@ -1,0 +1,67 @@
+.team-section {
+  @extend %section;
+  background-color: $primary-bg-color;
+}
+
+.team {
+  @extend %list;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.team__item {
+  background-color: $header-bg-color;
+  box-shadow: $team-cards-shadows;
+  border-radius: 0px 0px 4px 4px;
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
+    margin: 15px;
+  }
+}
+
+.team__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.team__description {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
+  letter-spacing: 0.03em;
+}
+
+.team__title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.19;
+  }
+}
+
+.team__profession {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.188;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.19;
+  }
+}

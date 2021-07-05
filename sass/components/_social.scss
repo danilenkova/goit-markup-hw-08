@@ -1,0 +1,35 @@
+.social {
+  @extend %list;
+  display: inline-flex;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social__link {
+  @extend %link;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  background-color: $header-bg-color;
+  color: $icons-color;
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $header-bg-color;
+  }
+}
+
+.social__icon {
+  fill: currentColor;
+  &:hover,
+  &:focus {
+    fill: currentColor;
+  }
+}

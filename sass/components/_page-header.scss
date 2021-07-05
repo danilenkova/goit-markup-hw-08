@@ -1,0 +1,8 @@
+.site-header {
+  background-color: $header-bg-color;
+  border-bottom: 1px solid $header-border;
+  min-height: 60px;
+  &__conteiner {
+    @include centeredFlex($position: space-between);
+  }
+}

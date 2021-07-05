@@ -1,0 +1,43 @@
+.our-work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  @extend %section;
+  padding-top: 0;
+}
+
+.conteiner__title {
+  @extend %title;
+}
+
+.work {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.work__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.work__item {
+  flex-basis: calc((100% - 90px) / 3);
+  position: relative;
+  margin: 15px;
+}
+
+.work__title {
+  @extend %title;
+  @include centeredFlex;
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  margin-bottom: 0;
+  width: 100%;
+  text-transform: uppercase;
+  background-color: $work-list-overlay;
+  color: $header-bg-color;
+}

@@ -1,0 +1,29 @@
+.contact-box {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
+
+.contact-box__list {
+  @extend %list;
+  // display: flex;
+  // flex-direction: column;
+  font-family: inherit;
+  font-style: normal;
+}
+
+.contact-box__item:not(:last-child) {
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+}
+
+.contact-box__link {
+  @extend %link;
+  color: $footer-link-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

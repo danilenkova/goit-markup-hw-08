@@ -1,0 +1,48 @@
+// Section
+
+%section {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+// Title
+
+%title {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+//  Link
+
+%link {
+  text-decoration: none;
+  transition-property: background-color, color, box-shadow, border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// List
+
+%list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+// Button
+
+%btn {
+  text-align: center;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

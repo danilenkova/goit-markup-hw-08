@@ -1,0 +1,51 @@
+.clients {
+  @extend %section;
+  background-color: $header-bg-color;
+}
+
+.clients__list {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.clients__item {
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 180px) / 6);
+    margin: 15px;
+  }
+}
+
+.clients__link {
+  @extend %link;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: $header-bg-color;
+  color: $icons-color;
+  border: 1px solid $icons-color;
+  border-radius: 4px;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+  &:hover,
+  &:focus {
+    fill: currentColor;
+  }
+}

@@ -1,0 +1,25 @@
+.site-footer {
+  line-height: 1.71;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.17;
+  }
+  background-color: $footer-bg-color;
+  color: $header-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.site-footer__conteiner {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
